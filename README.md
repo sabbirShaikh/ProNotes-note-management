@@ -9,7 +9,7 @@ ProNote is a high-performance, secure, and minimal **note-taking web application
 ## 🌐 Live Project
 
 🔗 **Live Demo:**  
-https://pronote-notesapp.netlify.app/contact
+https://pronote-notesapp.netlify.app/
 
 📦 **GitHub Repository:**  
 https://github.com/sabbirShaikh/ProNotes-note-management.git
