@@ -6,6 +6,16 @@ ProNote is a high-performance, secure, and minimal **note-taking web application
 
 ---
 
+## 🌐 Live Project
+
+🔗 **Live Demo:**  
+https://pronote-notesapp.netlify.app/contact
+
+📦 **GitHub Repository:**  
+https://github.com/sabbirShaikh/ProNotes-note-management.git
+
+---
+
 ## 🚀 Features
 
 - **Secure Authentication**
@@ -48,7 +58,7 @@ ProNote is a high-performance, secure, and minimal **note-taking web application
 - React.js
 - Tailwind CSS
 - React Router v6
-- Fetch
+- Fetch API
 - React Toastify
 
 ### Backend
@@ -79,8 +89,8 @@ ProNote is a high-performance, secure, and minimal **note-taking web application
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/sabbirShaikh/pronote.git
-cd pronote
+git clone https://github.com/sabbirShaikh/ProNotes-note-management.git
+cd ProNotes-note-management
 ```
 
 ### 2️⃣ Backend Setup
@@ -129,6 +139,7 @@ npm start
     ├── controllers/
     ├── models/
     ├── routes/
+    ├── middleware/
     └── utils/
 ```
 
@@ -139,8 +150,8 @@ npm start
 **Sabbir Shaikh**  
 MERN Stack Developer
 
-Portfolio: https://sk-sabbir-ali-portfolio.netlify.app  
-GitHub: https://github.com/sabbirShaikh
+🌐 Portfolio: https://sk-sabbir-ali-portfolio.netlify.app  
+💻 GitHub: https://github.com/sabbirShaikh
 
 ---
 
