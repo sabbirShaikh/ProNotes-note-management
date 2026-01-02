@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const user = { email: formData.email, password: formData.password };
-      const data = await authFetch("http://localhost:8080/api/v1/user/login", {
+      const data = await authFetch("/api/v1/user/login", {
         method: "post",
         body: JSON.stringify(user),
       });

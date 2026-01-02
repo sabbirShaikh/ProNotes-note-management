@@ -26,7 +26,7 @@ const Notes = () => {
   const fetchNotes = async () => {
     setLoading(true);
     try {
-      const data = await authFetch("http://localhost:8080/api/v1/notes/");
+      const data = await authFetch("/api/v1/notes/");
       if (data.success) {
         setNotes(data.notes);
       }
@@ -55,7 +55,7 @@ const Notes = () => {
     e.preventDefault();
     try {
       const data = await authFetch(
-        "http://localhost:8080/api/v1/notes/verify",
+        "/api/v1/notes/verify",
         {
           method: "POST",
           body: JSON.stringify({ password }),
@@ -77,8 +77,8 @@ const Notes = () => {
   const handleSaveNote = async (e) => {
     e.preventDefault();
     const url = editingId
-      ? `http://localhost:8080/api/v1/notes/update/${editingId}`
-      : "http://localhost:8080/api/v1/notes/add";
+      ? `/api/v1/notes/update/${editingId}`
+      : "/api/v1/notes/add";
     const method = editingId ? "PUT" : "POST";
 
     try {
@@ -112,7 +112,7 @@ const Notes = () => {
     if (window.confirm("Are you sure you want to delete this note?")) {
       try {
         const data = await authFetch(
-          `http://localhost:8080/api/v1/notes/delete/${noteId}`,
+          `/api/v1/notes/delete/${noteId}`,
           {
             method: "DELETE",
           }

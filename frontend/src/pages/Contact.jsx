@@ -23,7 +23,7 @@ const Contact = () => {
       message: formData.message,
     };
     try {
-      const data = await authFetch("http://localhost:8080/api/v1/contact", {
+      const data = await authFetch("/api/v1/contact", {
         method: "post",
         body: JSON.stringify(details),
       });

@@ -27,7 +27,7 @@ const Profile = () => {
 
   async function getUser() {
     try {
-      const data = await authFetch("http://localhost:8080/api/v1/user/");
+      const data = await authFetch("/api/v1/user/");
       setUser(data.user);
     } catch (error) {
       console.log(error.message);
@@ -43,7 +43,7 @@ const Profile = () => {
     const email = updateDet.email;
     try {
       const data = await authFetch(
-        "http://localhost:8080/api/v1/user/emailchange",
+        "/api/v1/user/emailchange",
         {
           method: "put",
           body: JSON.stringify({ email }),
@@ -70,7 +70,7 @@ const Profile = () => {
     };
     try {
       const data = await authFetch(
-        "http://localhost:8080/api/v1/user/pschange",
+        "/api/v1/user/pschange",
         {
           method: "put",
           body: JSON.stringify(details),
@@ -89,7 +89,7 @@ const Profile = () => {
   const handleDeleteAccount = async () => {
     try {
       const data = await authFetch(
-        "http://localhost:8080/api/v1/user/deleteacc",
+        "/api/v1/user/deleteacc",
         {
           method: "delete",
         }

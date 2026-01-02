@@ -27,7 +27,7 @@ const Signup = () => {
       password: formData.password,
     };
     try {
-      const data = await authFetch("http://localhost:8080/api/v1/user/signup", {
+      const data = await authFetch("/api/v1/user/signup", {
         method: "post",
         body: JSON.stringify(user),
       });
